@@ -1,4 +1,6 @@
 import TimerCircle from './components/TimerCircle';
+import PrimaryButton from './components/PrimaryButton';
+import PlanLink from './components/PlanLink';
 
 
 function App() {
@@ -22,8 +24,10 @@ function App() {
             </div>
           </div>
         </header>
-        <main className="flex justify-center pt-4">
+        <main className="flex flex-col justify-center pt-4 gap-10">
           <TimerCircle value={20} unit="HOURS" />
+          <PrimaryButton className="w-full max-w-md">START SESSION</PrimaryButton>
+          <PlanLink planLabel="20:4" onClick={() => {}} />
         </main>
       </div>
     </div>
