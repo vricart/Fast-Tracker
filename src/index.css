@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --color-bg: #0e0f12;
   --color-bg-soft: #16171e;
   --color-primary: #00ac4b;
-  --font-base: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
-  "Segoe UI", sans-serif;
+  --font-base: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
 }
 
 body {
@@ -38,4 +38,19 @@ body {
 
 .card {
   background-color: var(--color-bg-soft);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 200ms ease-out forwards;
 }
